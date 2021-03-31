@@ -5,7 +5,7 @@ A tool for run jinja2-cli using Docker in Rancheros
 ## Supported tags and Dockerfile links
 
 -	[`latest` (*Dockerfile*)](https://github.com/rcastropolizainformatica/rancheros-jinja2/blob/main/Dockerfile)
--	[`v1.0.0` (*Dockerfile*)](https://github.com/rcastropolizainformatica/rancheros-jinja2/blob/v1.0.0/Dockerfile)
+-	[`v1.0.1` (*Dockerfile*)](https://github.com/rcastropolizainformatica/rancheros-jinja2/blob/v1.0.1/Dockerfile)
 
 ## Template file
 
@@ -28,5 +28,5 @@ var_b: VARIABLE_B_VALUE
 ```bash
 docker build -t rancheros-jinja2 .
 docker run --rm -v $(pwd)/test:/data \
-    rancheros-jinja2 jinja2 /data/template.j2 /data/variables.yml --format=yml
+    rancheros-jinja2 /data/template.j2 /data/variables.yml --format=yml
 ```
